@@ -1,3 +1,4 @@
+import Navbar from '../Components/Navbar'
 import Header from '../Components/Header'
 import Providers from './Providers'
 import './globals.css'
@@ -16,7 +17,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>
           
-          <Header/>      
+          <Header/>
+
+          <Navbar/>
+
           {children}
 
         </Providers>
